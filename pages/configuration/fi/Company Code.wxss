@@ -1,0 +1,38 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：OX02";
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.demo1-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_T001';
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "公司代码（Company Code）在SAP中定义是需要定义独立核算的会计实体或对外出具财务报表的会计单元。一个公司代码与社会的公司法人相似。";
+}
+.title1-text2:before{
+  content: "在SAP中，“公司代码”与“公司”（Company）是两个概念，一套配置方案可以没有“公司”，但不能没有“公司代码”。";
+}
+.title1-text3:before{
+  content: "在SAP的四级组织架构中，公司代码的上级是集团，通常需要指定一个科目表，下级则是工厂。一个集团可以有多个公司代码；一个公司代码下可有多个工厂。";
+}
+.title1-text4:before{
+  content: "一个公司代码如正常使用，还需要指定一些全局性参数和组织机构，主要有：科目表、会计年代变式、字段状态变式、记帐期间变式、贷方控制范围等。";
+}
+.title1-text5:before{
+  content: "公司代码的创建一般分为两种：新建法和对象复制法。新建法只是创建一个公司代码的编码、地址等基本信息；对象复制法则可以将公司代码所属的配置信息一并复制过来，一般用法是快速复制已配置好的公司代码。";
+}

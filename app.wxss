@@ -1,10 +1,74 @@
-/**app.wxss**/
+/* page */
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100%;
   justify-content: space-between;
-  padding: 200rpx 0;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page-head{
+  padding: 20rpx 1rpx 20rpx;
+  text-align: center;
+}
+.page-head-title{
+  display: inline-block;
+  padding: 0 40rpx 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #BEBEBE;
+}
+.page-head-line{
+  margin: 0 auto;
+  width: 200rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+.page-section-spacing{
   box-sizing: border-box;
-} 
+  padding: 0 30rpx;
+}
+.page-section-title{
+  font-size: 30rpx;
+  color: black;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #A9A9A9;
+  color: #FFFFFF;
+  font-size: 36rpx;  
+}
+
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #D3D3D3;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #B0C4DE;
+  color: #353535;
+  font-size: 36rpx;
+}
+
