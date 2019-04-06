@@ -1,0 +1,107 @@
+<!--主盒子-->
+<view class="container_left">
+
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+
+    <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+      Fi配置
+    </view>
+
+    <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" bindtap="switchRightTab" data-id="4">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 5 ? 'active' : ''}}" bindtap="switchRightTab" data-id="5">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 6 ? 'active' : ''}}" bindtap="switchRightTab" data-id="6">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 7 ? 'active' : ''}}" bindtap="switchRightTab" data-id="7">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 8 ? 'active' : ''}}" bindtap="switchRightTab" data-id="8">
+
+    </view>
+
+    <view class="nav_left_items {{curNav == 9 ? 'active' : ''}}" bindtap="switchRightTab" data-id="9">
+
+    </view>
+
+  </view>
+
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+
+    <view wx:if="{{curNav==1}} ">
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/1.jpg"></image>
+        <navigator url="../../configuration/fi/Company Code/page/Company Code"  hover-class="other-navigator-hover">
+          <text>公司代码</text>
+        </navigator>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/2.jpg"></image>
+        <text>定义公司</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/3.jpg"></image>
+        <text>科目表</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/4.jpg"></image>
+        <text>会计年度</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/5.jpg"></image>
+        <text>记账期间</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/6.jpg"></image>
+        <text>信贷范围</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/7.jpg"></image>
+        <text>字段状态</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/8.jpg"></image>
+        <text>容差组</text>
+      </view>
+
+      <view class="nav_right_items">
+        <image src="/pages/configuration/index/image/fi/9.jpg"></image>
+        <text>会计凭证</text>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==2}}">
+
+    </view>
+
+    <view wx:if="{{curNav==3}}">
+
+    </view>
+
+  </view>
+
+</view>

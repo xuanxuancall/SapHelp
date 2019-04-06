@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/configuration/fi/Company Code",
+    "pages/configuration/index/index",
+    "pages/configuration/fi/Company Code/page/Company Code",
     "pages/logs/logs"
   ],
   "window": {

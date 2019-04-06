@@ -1,10 +1,12 @@
 Page({
   data: {
+    head: ['公司代码'],
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
     duration: 500,
+
 
     current_change: false,
     current_x: 0,
@@ -13,23 +15,37 @@ Page({
     startpoint: [0, 0],
     democlass: ['demo1-text1', 'demo1-text2', 'demo1-text3'],
     titleclass: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5'],
+    headtext: [{
+      head1class: ['公司代码']
+    }, {
+      head2class: ['维护公司代码的全局性参数']
+    }, {
+      head3class: ['???']
+    }, ],
 
     demo_text_x: [{
         demo1class: ['demo1-text1', 'demo1-text2', 'demo1-text3']
       },
       {
-        demo2class: ['demo2-text1', 'demo2-text2']
+        demo2class: ['demo2-text1', 'demo2-text2', 'demo2-text3']
       },
       {
         demo3class: []
-      },      
+      },
     ],
 
     title_text: [{
         title1class: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5']
       },
       {
-        title2class: []
+        title2class: ['title2-text1', 'title2-text2', 'title2-text3',
+          'title2-text4', 'title2-text5','title2-text6',
+          'title2-text7', 'title2-text8', 'title2-text9',
+          'title2-text10','title2-text11', 'title2-text12',
+        ]
+      },
+      {
+        title3class: []
       },
     ]
 
@@ -79,27 +95,10 @@ Page({
         }
       }
     }
-
-    var x = this.data.current_x;
-    switch (this.data.moveend) {
-      case 'left':
-        if (x < 3) {
-          x += 1
-        };
-        break;
-      case 'right':
-        if (x >= 0) {
-          x -= 1
-        };
-        break;
-      default:
-        console.log('default')
-        break;
-    }
     if (this.data.moveend == 'left' || this.data.moveend == 'right') {
       this.setData({
         democlass: [],
-      })      
+      })
     }
   },
 
@@ -158,7 +157,8 @@ Page({
           this.setData({
             democlass: this.data.demo_text_x[0].demo1class,
             current_change: false,
-            titleclass: this.data.title_text[0].title1class
+            titleclass: this.data.title_text[0].title1class,
+            head: this.data.headtext[0].head1class
           }, )
         }
         break;
@@ -167,7 +167,18 @@ Page({
           this.setData({
             democlass: this.data.demo_text_x[1].demo2class,
             current_change: false,
-            titleclass: this.data.title_text[1].title2class
+            titleclass: this.data.title_text[1].title2class,
+            head: this.data.headtext[1].head2class
+          })
+        }
+        break;
+      case 2:
+        if (current_change = true) {
+          this.setData({
+            democlass: this.data.demo_text_x[2].demo3class,
+            current_change: false,
+            titleclass: this.data.title_text[2].title3class,
+            head: this.data.headtext[2].head3class
           })
         }
         break;
