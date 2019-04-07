@@ -1,7 +1,9 @@
 Page({
   data: {
-    head: ['公司代码'],
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    head: ['科目表'],
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3', 'demo-text-4','demo-text-5'],
+    democlass: ['demo1-text1', 'demo1-text2', 'demo1-text3'],
+    titleclass: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
@@ -13,15 +15,21 @@ Page({
     current_y: 0,
     moveend: '',
     startpoint: [0, 0],
-    democlass: ['demo1-text1', 'demo1-text2', 'demo1-text3'],
-    titleclass: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5'],
+
     headtext: [{
-      head1class: ['公司代码']
-    }, {
-      head2class: ['维护公司代码的全局性参数']
-    }, {
-        head3class: ['数据库表']
-    }, ],
+        head1class: ['科目表']
+      }, {
+        head2class: ['给科目表分配公司代码']
+      }, {
+        head3class: ['科目组']
+      },
+      {
+        head4class: ['留存收益科目']
+      },
+      {
+        head5class: ['数据库表']
+      },      
+    ],
 
     demo_text_x: [{
         demo1class: ['demo1-text1', 'demo1-text2', 'demo1-text3']
@@ -32,30 +40,47 @@ Page({
       {
         demo3class: ['demo3-text1', 'demo3-text2', 'demo3-text3']
       },
+      {
+        demo4class: ['demo4-text1', 'demo4-text2', 'demo4-text3']
+      },
+      {
+        demo5class: ['demo5-text1', 'demo5-text2', 'demo5-text3']
+      },      
     ],
 
     title_text: [{
         title1class: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5']
       },
       {
-        title2class: [
-          'title2-text1', 'title2-text2', 'title2-text3',
-          'title2-text4', 'title2-text5','title2-text6',
+        title2class: ['title2-text1', 'title2-text2', 'title2-text3',
+          'title2-text4', 'title2-text5', 'title2-text6',
           'title2-text7', 'title2-text8', 'title2-text9',
-          'title2-text10','title2-text11','title2-text12',
+          'title2-text10', 'title2-text11', 'title2-text12',
         ]
       },
       {
-        title3class: [
-          'title3-text1', 'title3-text2', 'title3-text3',
+        title3class: ['title3-text1', 'title3-text2', 'title3-text3',
           'title3-text4', 'title3-text5', 'title3-text6',
           'title3-text7', 'title3-text8', 'title3-text9',
-          'title3-text10','title3-text11','title3-text12',
+          'title3-text10', 'title3-text11', 'title3-text12',
         ]
       },
       {
-        title3class: []
+        title4class: [
+          'title4-text1', 'title4-text2', 'title4-text3',
+          'title4-text4', 'title4-text5', 'title4-text6',
+          'title4-text7', 'title4-text8', 'title4-text9',
+          'title4-text10', 'title4-text11', 'title4-text12',
+        ]
       },
+      {
+        title5class: [
+          'title5-text1', 'title5-text2', 'title5-text3',
+          'title5-text4', 'title5-text5', 'title5-text6',
+          'title5-text7', 'title5-text8', 'title5-text9',
+          'title5-text10','title5-text11','title5-text12',
+        ]
+      },      
     ]
 
   },
@@ -128,6 +153,16 @@ Page({
           this.setData({
             democlass: this.data.demo_text_x[2].demo3class,
           })
+          break;
+        case 3:
+          this.setData({
+            democlass: this.data.demo_text_x[3].demo4class,
+          })
+          break;
+        case 4:
+          this.setData({
+            democlass: this.data.demo_text_x[4].demo5class,
+          })
           break;          
         default:
           console.log('default')
@@ -148,7 +183,7 @@ Page({
 
     switch (moveend) {
       case 'left':
-        if (current_x < 3 && current_change == true) {
+        if (current_x < 6 && current_change == true) {
           current_x += 1
         };
         break;
@@ -196,6 +231,26 @@ Page({
           })
         }
         break;
+      case 3:
+        if (current_change = true) {
+          this.setData({
+            democlass: this.data.demo_text_x[3].demo4class,
+            current_change: false,
+            titleclass: this.data.title_text[3].title4class,
+            head: this.data.headtext[3].head4class
+          })
+        }
+        break;
+      case 4:
+        if (current_change = true) {
+          this.setData({
+            democlass: this.data.demo_text_x[4].demo5class,
+            current_change: false,
+            titleclass: this.data.title_text[4].title5class,
+            head: this.data.headtext[4].head5class
+          })
+        }
+        break;        
       default:
         console.log('default')
         break;

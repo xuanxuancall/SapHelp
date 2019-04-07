@@ -2,6 +2,14 @@
   "pages": [
     "pages/configuration/index/index",
     "pages/configuration/fi/Company Code/page/Company Code",
+    "pages/configuration/fi/Company/page/Code",
+    "pages/configuration/fi/Chart/page/Code",
+    "pages/configuration/fi/Fiscal Year/page/Code",
+    "pages/configuration/fi/Open Posting Periods/page/Code",
+    "pages/configuration/fi/Credit Control Area/page/Code",
+    "pages/configuration/fi/Field Status Variants/page/Code",
+    "pages/configuration/fi/Accounting Document/page/Code",
+    "pages/configuration/fi/Tolerance Groups/page/Code",
     "pages/logs/logs"
   ],
   "window": {

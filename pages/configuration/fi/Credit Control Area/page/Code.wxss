@@ -1,0 +1,118 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25% 0 25% 0;  /* 给图片添加圆角边框 */
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：OB45";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo1-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_T014';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "信贷控制范围(Credit Control Area)是一个专门用来控制客户信贷限额的组织单元，也就是客户可以赊账的额度，涉及到发货、销售开票等业务，当客户超出信贷余额时系统会锁定，客户需缴款或为其提高信贷额度才能通过。";
+}
+.title1-text2:before{
+  content: "信贷控制范围可以设定更新方式，主要有以下几种：";
+}
+.title1-text3:before{
+  content: "<空值>，不更新；";
+}
+.title1-text4:before{
+  content: "000012，更新未清订单+未清交货+发票；";
+}
+.title1-text5:before{
+  content: "000015，更新未清交货+发票；";
+}
+.title1-text6:before{
+  content: "000018，更新未清订单+发票；";
+}
+.title1-text7:before{
+  content: "其中000012对信贷更新最为完整，通常就选用此方式。";
+}
+
+.demo2-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo2-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_T691A';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title2-text1:before{
+  content: "在SAP的信贷管理中，客户有不同的风险管理方案，为此需要定义信贷管理风险类别（Credit Management Risk Categories），如高风险、一般风险、低风险等。";
+}
+.title2-text2:before{
+  content: "信贷管理风险类别归属于信贷控制范围（Credit Control Area）下，每个信贷控制范围可以设定多个风险类别，并可以将其中一个风险类别设定为默认值。";
+}
+.title2-text3:before{
+  content: "由于风险类别定义与控制范围设定默认风险类别互为依赖，故配置的顺序是：首先配置信贷控制范围（默认风险类别条目值为空），然后定义风险类别，最后修改信贷控制范围维护默认风险类别条目。";
+}
+
+.demo3-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo3-text2:before{  
+  content: "(╯□╰) T-Code：OB38";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo3-text3:before{  
+  content: "(╯□╰) SM30 维护视图：V_001_X";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title3-text1:before{
+  content: "信贷控制范围(Credit Control Area)创建后，与公司代码(Company Code)并无联系。此项操作就是将公司代码指定信贷控制范围。每个公司代码只能指定一个信贷控制范围；一个信贷控制范围可以分配给多个公司代码。";
+}
+.title3-text2:before{
+  content: "此配置操作也可以在维护公司代码全局性参数时进行配置";
+}
+
+.demo4-text1:before{  
+  content: "查询：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo4-text2:before{  
+  content: "(╯□╰) T-Code：SE11";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title4-text1:before{
+  content: "信贷控制范围:T014";
+}
+.title4-text2:before{
+  content: "信用管理风险类别:T691A";
+}

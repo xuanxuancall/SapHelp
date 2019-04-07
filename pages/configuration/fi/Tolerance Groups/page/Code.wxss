@@ -1,0 +1,77 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25% 0 25% 0;  /* 给图片添加圆角边框 */
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：OBA4";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo1-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_T043T';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "雇员容差组（Tolerance Groups for Employees）定义了雇员在做会计凭证时的金额限制。一个公司代码下可以定义多个雇员容差组，为每个会计人员分配不同等级的容差组，如级别低的人员分配到金额较小的容差组。";
+}
+.title1-text2:before{
+  content: "容差组编号可以为<空>，这是一个重要的条目，会计人员被默认分配到为<空>的容差组中。如果此公司代码下无<空>的容差组，则需手工将会计人员分配到每一个具体的容差组下，否则无法创建会计凭证。";
+}
+
+.demo2-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo2-text2:before{  
+  content: "(╯□╰) T-Code：OBA3";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title2-text1:before{
+  content: "应收应付容差组，可在清帐时进行金额约束。对于供应商和客户的收付业务，可以定义一些控制条件，如对某类供应商的付款差异不超过50元，或发票金额的0.05%等。";
+}
+.title2-text2:before{
+  content: "此容差组由于与支付相关，所以在供应商、客户主数据中均有维护位置";
+}
+.title2-text3:before{
+  content: "";
+}
+
+.demo3-text1:before{  
+  content: "查询：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo3-text2:before{  
+  content: "(╯□╰) T-Code：SE11";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title3-text1:before{
+  content: "雇员容差组:T043T";
+}
+.title3-text2:before{
+  content: "客户/供应商集团的容差(应收应付容差):T043G";
+}

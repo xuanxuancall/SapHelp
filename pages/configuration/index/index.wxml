@@ -9,7 +9,7 @@
     </view>
 
     <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
-
+      MM配置
     </view>
 
     <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
@@ -45,57 +45,79 @@
   <!-- 右侧栏 -->
   <view class="nav_right">
 
-    <view wx:if="{{curNav==1}} ">
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/1.jpg"></image>
-        <navigator url="../../configuration/fi/Company Code/page/Company Code"  hover-class="other-navigator-hover">
-          <text>公司代码</text>
-        </navigator>
-      </view>
+    <view wx:if="{{curNav==1}}">
+      <block wx:if="{{curNav==1}}" />
+      <navigator url="../../configuration/fi/Company Code/page/Company Code" hover-class="other-navigator-hover">
+        <view class="{{curNav==1 ? 'nav_right_items' : ''}}">
+          <image src="/pages/configuration/index/image/fi/1.jpg" />
+          <text>{{curNav==1 ? '公司代码': ''}}</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/2.jpg"></image>
-        <text>定义公司</text>
-      </view>
+      <navigator url="{{curNav==1 ? '../../configuration/fi/Company/page/Code':''}}" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/2.jpg"></image>
+          <text>定义公司</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/3.jpg"></image>
-        <text>科目表</text>
-      </view>
+      <navigator url="../../configuration/fi/Chart/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/3.jpg"></image>
+          <text>科目表</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/4.jpg"></image>
-        <text>会计年度</text>
-      </view>
+      <navigator url="../../configuration/fi/Fiscal Year/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/4.jpg"></image>
+          <text>会计年度</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/5.jpg"></image>
-        <text>记账期间</text>
-      </view>
+      <navigator url="../../configuration/fi/Open Posting Periods/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/5.jpg"></image>
+          <text>记账期间</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/6.jpg"></image>
-        <text>信贷范围</text>
-      </view>
+      <navigator url="../../configuration/fi/Credit Control Area/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/6.jpg"></image>
+          <text>信贷范围</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/7.jpg"></image>
-        <text>字段状态</text>
-      </view>
+      <navigator url="../../configuration/fi/Field Status Variants/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/7.jpg"></image>
+          <text>字段状态</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/8.jpg"></image>
-        <text>容差组</text>
-      </view>
+      <navigator url="../../configuration/fi/Tolerance Groups/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/8.jpg"></image>
+          <text>容差组</text>
+        </view>
+      </navigator>
 
-      <view class="nav_right_items">
-        <image src="/pages/configuration/index/image/fi/9.jpg"></image>
-        <text>会计凭证</text>
-      </view>
+      <navigator url="../../configuration/fi/Accounting Document/page/Code" hover-class="other-navigator-hover">
+        <view class="nav_right_items">
+          <image src="/pages/configuration/index/image/fi/9.jpg"></image>
+          <text>会计凭证</text>
+        </view>
+      </navigator>
     </view>
 
     <view wx:if="{{curNav==2}}">
-
+      <block wx:if="{{curNav==2}}" />
+      <navigator url="../../configuration/mm/Plant/page/Code" hover-class="other-navigator-hover">
+      <view class="nav_right_items">
+        <text>工厂</text>
+      </view>
+      </navigator>
     </view>
 
     <view wx:if="{{curNav==3}}">

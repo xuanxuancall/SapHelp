@@ -1,0 +1,33 @@
+<import src="../../../../wxml_common/head.wxml" />
+<view class="container">
+  <block wx:for="{{head}}" wx:key="*this">
+    <template is="head" data="{{title:item}}" />
+  </block>
+
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}} " bindchange='current_change'>
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}} " bindtouchstart="move_start" bindtouchmove="touch_move" bindtouchend='move_end'>
+              <image class="image" src="../../../image/sap_demo.jpg" />
+              <block wx:for="{{democlass}}" wx:key="*this">
+                <view class='{{item}}'>
+                </view>
+              </block>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="page-body">
+    <view class="page-section-title">
+      <block wx:for="{{titleclass}}" wx:key="*this">
+        <view class='{{item}}'>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

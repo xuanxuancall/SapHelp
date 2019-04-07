@@ -1,7 +1,7 @@
 Page({
   data: {
-    head: ['公司代码'],
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    head: ['信贷控制范围'],
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3', 'demo-text-4'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
@@ -14,13 +14,19 @@ Page({
     moveend: '',
     startpoint: [0, 0],
     democlass: ['demo1-text1', 'demo1-text2', 'demo1-text3'],
-    titleclass: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5'],
+    titleclass: ['title1-text1', 'title1-text2', 'title1-text3',
+      'title1-text4', 'title1-text5', 'title1-text6',
+      'title1-text7', 'title1-text8', 'title1-text9',
+      'title1-text10', 'title1-text11', 'title1-text12'],
     headtext: [{
-      head1class: ['公司代码']
+      head1class: ['信贷控制范围']
     }, {
-      head2class: ['维护公司代码的全局性参数']
+        head2class: ['风险类别']
+      }, 
+    {
+        head3class: ['给公司代码分配信贷控制范围']
     }, {
-        head3class: ['数据库表']
+      head4class: ['数据库表']
     }, ],
 
     demo_text_x: [{
@@ -32,16 +38,22 @@ Page({
       {
         demo3class: ['demo3-text1', 'demo3-text2', 'demo3-text3']
       },
+      {
+        demo4class: ['demo4-text1', 'demo4-text2', 'demo4-text3']
+      },      
     ],
 
     title_text: [{
-        title1class: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5']
+        title1class: ['title1-text1', 'title1-text2', 'title1-text3', 
+          'title1-text4', 'title1-text5', 'title1-text6',
+          'title1-text7', 'title1-text8', 'title1-text9',
+          'title1-text10', 'title1-text11', 'title1-text12',]
       },
       {
         title2class: [
-          'title2-text1', 'title2-text2', 'title2-text3',
+          'title2-text1', 'title2-text2','title2-text3',
           'title2-text4', 'title2-text5','title2-text6',
-          'title2-text7', 'title2-text8', 'title2-text9',
+          'title2-text7', 'title2-text8','title2-text9',
           'title2-text10','title2-text11','title2-text12',
         ]
       },
@@ -50,12 +62,15 @@ Page({
           'title3-text1', 'title3-text2', 'title3-text3',
           'title3-text4', 'title3-text5', 'title3-text6',
           'title3-text7', 'title3-text8', 'title3-text9',
-          'title3-text10','title3-text11','title3-text12',
-        ]
+          'title3-text10','title3-text11','title3-text12',]
       },
       {
-        title3class: []
-      },
+        title4class: [
+          'title4-text1', 'title4-text2', 'title4-text3',
+          'title4-text4', 'title4-text5', 'title4-text6',
+          'title4-text7', 'title4-text8', 'title4-text9',
+          'title4-text10', 'title4-text11', 'title4-text12',]
+      },      
     ]
 
   },
@@ -128,7 +143,12 @@ Page({
           this.setData({
             democlass: this.data.demo_text_x[2].demo3class,
           })
-          break;          
+          break;   
+        case 3:
+          this.setData({
+            democlass: this.data.demo_text_x[3].demo4class,
+          })
+          break;                  
         default:
           console.log('default')
           break;
@@ -148,7 +168,7 @@ Page({
 
     switch (moveend) {
       case 'left':
-        if (current_x < 3 && current_change == true) {
+        if (current_x < 4 && current_change == true) {
           current_x += 1
         };
         break;
@@ -195,7 +215,17 @@ Page({
             head: this.data.headtext[2].head3class
           })
         }
-        break;
+        break;  
+      case 3:
+        if (current_change = true) {
+          this.setData({
+            democlass: this.data.demo_text_x[3].demo4class,
+            current_change: false,
+            titleclass: this.data.title_text[3].title4class,
+            head: this.data.headtext[3].head4class
+          })
+        }
+        break;              
       default:
         console.log('default')
         break;

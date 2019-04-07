@@ -1,6 +1,6 @@
 Page({
   data: {
-    head: ['公司代码'],
+    head: ['雇员容差组'],
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     indicatorDots: true,
     vertical: false,
@@ -14,13 +14,16 @@ Page({
     moveend: '',
     startpoint: [0, 0],
     democlass: ['demo1-text1', 'demo1-text2', 'demo1-text3'],
-    titleclass: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5'],
+    titleclass: ['title1-text1', 'title1-text2', 'title1-text3',
+      'title1-text4', 'title1-text5', 'title1-text6',
+      'title1-text7', 'title1-text8', 'title1-text9',
+      'title1-text10', 'title1-text11', 'title1-text12'],
     headtext: [{
-      head1class: ['公司代码']
+      head1class: ['雇员容差组']
     }, {
-      head2class: ['维护公司代码的全局性参数']
+        head2class: ['应收应付容差组']
     }, {
-        head3class: ['数据库表']
+      head3class: ['数据库表']
     }, ],
 
     demo_text_x: [{
@@ -35,13 +38,16 @@ Page({
     ],
 
     title_text: [{
-        title1class: ['title1-text1', 'title1-text2', 'title1-text3', 'title1-text4', 'title1-text5']
+        title1class: ['title1-text1', 'title1-text2', 'title1-text3', 
+          'title1-text4', 'title1-text5', 'title1-text6',
+          'title1-text7', 'title1-text8', 'title1-text9',
+          'title1-text10', 'title1-text11', 'title1-text12',]
       },
       {
         title2class: [
-          'title2-text1', 'title2-text2', 'title2-text3',
+          'title2-text1', 'title2-text2','title2-text3',
           'title2-text4', 'title2-text5','title2-text6',
-          'title2-text7', 'title2-text8', 'title2-text9',
+          'title2-text7', 'title2-text8','title2-text9',
           'title2-text10','title2-text11','title2-text12',
         ]
       },
@@ -50,11 +56,7 @@ Page({
           'title3-text1', 'title3-text2', 'title3-text3',
           'title3-text4', 'title3-text5', 'title3-text6',
           'title3-text7', 'title3-text8', 'title3-text9',
-          'title3-text10','title3-text11','title3-text12',
-        ]
-      },
-      {
-        title3class: []
+          'title3-text10','title3-text11','title3-text12',]
       },
     ]
 
@@ -195,7 +197,7 @@ Page({
             head: this.data.headtext[2].head3class
           })
         }
-        break;
+        break;        
       default:
         console.log('default')
         break;

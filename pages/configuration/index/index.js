@@ -13,7 +13,9 @@ Page({
     this.setData({
       curNav: id
     })
-  }
+  },
 
 })
+
+
 

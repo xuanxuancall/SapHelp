@@ -1,0 +1,117 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25% 0 25% 0;  /* 给图片添加圆角边框 */
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：OB13";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "SAP系统后台定义科目表（Chart of Accounts），科目表的级别比公司代码（Company Code）高。一个科目表通常表示一个集团，下属若干个公司代码，这些公司代码可以有不同的记帐规则，但所用的总帐科目却只能是一套。";
+}
+.title1-text2:before{
+  content: "科目表下包含多个科目组，这是为总账科目的主数据字段状态服务，每个总帐科目均需指定一个科目组。";
+}
+
+.demo2-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo2-text2:before{  
+  content: "(╯□╰) T-Code：OB62";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo2-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_001_S';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title2-text1:before{
+  content: "在SAP的ERP四级组织结构中，科目表（Chart of Accounts）是公司代码（Company Code）的上级，当公司代码定义后，需指定所属的科目表。一个科目表下可以有多个公司代码，共用一套总帐科目。";
+}
+.title2-text2:before{
+  content: "此配置操作也可以在维护公司代码全局性参数时进行配置";
+}
+
+.demo3-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo3-text2:before{  
+  content: "(╯□╰) T-Code：OBD4";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title3-text1:before{
+  content: "一个科目表（Chart of Accounts）包含若干个科目组（Account Group），每一个总帐科目（G/L Accounts）都需要指定一个科目组。每个科目组定义了一套字段状态字，根据不同的字段状态字，总帐科目主数据的公司代码视图维护（TCODE：FS00、FSS0）时会有不同的字段输入要求（必填、选填、只显示或隐藏）。";
+}
+.title3-text2:before{
+  content: "科目组的创建方法有两种：复制法和新建法。复制法是从已有科目组中复制再小范围修改而得。";
+}
+
+.demo4-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo4-text2:before{  
+  content: "(╯□╰) T-Code：OB53";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title4-text1:before{
+  content: "在SAP系统中，科目表的留存收益科目（Retained Earnings Account）需要在维护总帐科目主数据之前完成。这个科目是尚未建立，一般定为待分配利润科目。";
+}
+.title4-text2:before{
+  content: "此项操作是许多自动记帐配置中的一个，它只对单项记帐。标准的自动记帐中的三方面配置要素：规则（Rules）、过帐码（Posting Key）、科目（Accounts）,它只有两个（过帐码、科目）。过帐码是系统已定义好的，一般无需修改；剩下的具体操作就是设置科目了。";
+}
+.title4-text3:before{
+  content: "此项是维护总帐科目主数据的前提配置";
+}
+
+.demo5-text1:before{  
+  content: "查询方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo5-text2:before{  
+  content: "(╯□╰) T-Code：SE11";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title5-text1:before{
+  content: "科目表目录：T004";
+}
+.title5-text2:before{
+  content: "标准科目表（留存收益科目）：T030";
+}

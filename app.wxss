@@ -49,7 +49,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #F1F1F1;
+  background-color: red;
   color: #FFFFFF;
   font-size: 36rpx;  
 }
@@ -58,7 +58,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #2782D7;
+  background-color: orange;
   color: #FFFFFF;
   font-size: 36rpx;
 }
@@ -67,7 +67,25 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #F1F1F1;
+  background-color: yellow;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+
+.demo-text-4{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+
+.demo-text-5{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
   color: #FFFFFF;
   font-size: 36rpx;
 }

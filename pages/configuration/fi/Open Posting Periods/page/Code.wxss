@@ -1,0 +1,118 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25% 0 25% 0;  /* 给图片添加圆角边框 */
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：OBBO";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo1-text3:before{
+  content: '(╯□╰) SM30 维护视图：V_T010O';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "定义未结清过帐期间变式（Variants for Open Posting Periods）。这个变式是定义记帐期间的时间段。本文只是定义一个变式名，需要分配给公司代码，这样，多个公司代码的记帐期间可通过变式进行分组控制。";
+}
+
+.demo2-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo2-text2:before{  
+  content: "(╯□╰) T-Code：OB52";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title2-text1:before{
+  content: "维护未清过帐期间变式（Variants for Open Posting Periods）的具体内容，包括普通帐期和特殊帐期的起止年月。";
+}
+.title2-text2:before{
+  content: "此项配置就是财务的开帐期间，可设为一个时间段（如多个月或多年），也可严格管理设为一个月。";
+}
+.title2-text3:before{
+  content: "每条数据栏数较多，除左边4栏外，都是设定年月期间，包含4个期间段，分别是普通记帐的初始、结束年月份，特殊记帐的初始、结束年月份。";
+}
+.title2-text4:before{
+  content: "数据共有7条记录，其中“帐户类型或覆盖”条目分别是：+、A、D、K、M、S。它们的含义";
+}
+.title2-text5:before{
+  content: "+ : 对所有帐户类型都有效";
+}
+.title2-text6:before{
+  content: "A : 资产";
+}
+.title2-text7:before{
+  content: "D : 客户";
+}
+.title2-text8:before{
+  content: "K : 供应商";
+}
+.title2-text9:before{
+  content: "M : 物料";
+}
+.title2-text10:before{
+  content: "S : 总分类帐科目";
+}
+.title2-text11:before{
+  content: "V : 合同帐户";
+}
+
+.demo3-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo3-text2:before{  
+  content: "(╯□╰) T-Code：OBBP";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title3-text1:before{
+  content: "集团下的公司代码的记帐期间控制可以有多种策略，可以全部公司代码指定一个记账期间变式，也可以将公司代码分成若干组各指定一个变式。";
+}
+.title3-text2:before{
+  content: "一个变式可以分配给多个公司代码；一个公司代码只能指定一个变式。";
+}
+
+.demo4-text1:before{  
+  content: "查询：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo4-text2:before{  
+  content: "(╯□╰) T-Code：SE11";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title4-text1:before{
+  content: "过帐期间变式:T010O";
+}
+.title4-text2:before{
+  content: "允许的记帐期(维护记账期间变式):T001B";
+}

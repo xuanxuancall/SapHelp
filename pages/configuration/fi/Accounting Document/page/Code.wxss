@@ -1,0 +1,77 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25% 0 25% 0;  /* 给图片添加圆角边框 */
+}
+.demo1-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo1-text2:before{  
+  content: "(╯□╰) T-Code：FBN1";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title1-text1:before{
+  content: "在一个公司代码（Company Code）生成一张会计凭证（Accounting Document）之前，必须在对凭证类型设置一个号码范围。由于做帐有多种凭证类型，则需在一个公司代码下配置一套由多个条目组成的号码范围。";
+}
+.title1-text2:before{
+  content: "每个号码段由序号区间编号（Number range number）、记帐年份、起始编号、结束编号、是否外部编号等5个数据组成，每个序号区间编号可以有多个记帐年份，其中可以是指定年份（如2013、2014年等），也可以是默认年份（固定为9999年）。如果在本年度的号码段没有指定记帐年份，则会使用默认年份的编号段，如果两者（指定和默认）都没有则会报错。";
+}
+.title1-text3:before{
+  content: "创建的方法有两种：新建法和复制法。新建法是在一个公司代码下手工创建每一个号码段；复制法是复制已维护的公司代码数据，原公司代码的数据需要维护完整，Client自带的公司代码0001可作为样例，只是记帐年份仅有默认年份（9999年），可根据需要扩充。";
+}
+
+.demo2-text1:before{  
+  content: "操作方法：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo2-text2:before{  
+  content: "(╯□╰) T-Code：OBH1";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.demo2-text3:before{
+  content: '(╯□╰) T-Code：OBH2';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.title2-text1:before{
+  content: "其中T-CODE：OBH1适用于将一个公司代码的某个年度的号码范围，复制到多个公司代码下";
+}
+.title2-text2:before{
+  content: "而T-CODE：OBH2则是将指定的公司代码的某个年度的号码范围，复制到另一个年度下。";
+}
+.title2-text3:before{
+  content: "";
+}
+
+.demo3-text1:before{  
+  content: "查询：";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.demo3-text2:before{  
+  content: "(╯□╰) T-Code：SE11";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title3-text1:before{
+  content: "号码范围间隔:NRIV";
+}
